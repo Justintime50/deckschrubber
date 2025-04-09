@@ -1,4 +1,9 @@
 # CHANGELOG
+
+* `0.8.0`:
+  * Logs to `stdout` instead of `stderr` to play nicely with tools like `cronic`
+  * Bumps minimum version to Go 1.16
+  * Releases to Homebrew
 * `0.7.0`:
   * Fix logrus issue (name case)
   * Strucured as Go module
