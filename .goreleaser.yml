@@ -1,0 +1,17 @@
+version: 2
+
+builds:
+  - goos:
+    - linux
+    - darwin
+
+brews:
+  - repository:
+      owner: Justintime50
+      name: homebrew-formulas
+    directory: Formula
+    homepage: "https://github.com/Justintime50/deckschrubber"
+    description: "Deckschrubber inspects images of a Docker Registry and removes those older than a given age"
+    commit_author:
+      name: Justintime50
+      email: 39606064+Justintime50@users.noreply.github.com

@@ -1,6 +1,6 @@
 module github.com/fraunhoferfokus/deckschrubber
 
-go 1.13
+go 1.16
 
 require (
 	github.com/docker/distribution v2.7.1+incompatible
