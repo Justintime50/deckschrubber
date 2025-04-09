@@ -1,23 +1,16 @@
 package main
 
 import (
+	"encoding/json"
+	"flag"
+	"fmt"
+	"io"
+	"os"
+	"regexp"
 	"sort"
 	"strings"
 	"syscall"
 	"time"
-
-	"encoding/json"
-
-	"flag"
-
-	"io"
-
-	"fmt"
-	"os"
-
-	"regexp"
-
-	"golang.org/x/crypto/ssh/terminal"
 
 	"github.com/docker/distribution/context"
 	schema2 "github.com/docker/distribution/manifest/schema2"
@@ -25,6 +18,7 @@ import (
 	"github.com/docker/distribution/registry/client"
 	"github.com/fraunhoferfokus/deckschrubber/util"
 	log "github.com/sirupsen/logrus"
+	"golang.org/x/crypto/ssh/terminal"
 )
 
 var (
@@ -55,7 +49,7 @@ var (
 )
 
 const (
-	version string = "0.7.0"
+	version string = "0.8.1"
 )
 
 func init() {
